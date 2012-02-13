@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Цветовой тест Люшера</title>
         <style type="text/css">
+	  table { margin-bottom: 30px; }
           .block {
               width: 150px;
               height: 200px;
@@ -29,8 +30,8 @@
           .block0 {  background: #8b8878;  }
 
           .choices { }
-          .description { font-style: italic;  }
-	  .instruction {     }
+          .description { font-style: italic; margin-bottom: 10px; margin-left: 20px; }
+	  .instruction { font-family: "Times New Roman"; font-style: italic; font-size: 120%; text-align: center; }
         </style>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script type="text/javascript">
@@ -118,8 +119,10 @@
         </script>
     </head>
     <body>
-	<div class="instruction"><p class="instruction">Нажмите на тот цвет, который вам нравится больше всего</p></div>
-        <table>
+	<div class="choices"></div>
+	<div align="center">
+	   <div class="instruction"><p class="instruction">Нажмите на тот цвет, который вам нравится больше всего</p></div>
+           <table>
             <tr>
                 <td><div class="block1 block"></div></td>
                 <td><div class="block2 block"></div></td>
@@ -132,8 +135,8 @@
                 <td><div class="block7 block"></div></td>
                 <td><div class="block0 block"></div></td>
             </tr>
-        </table>
-        <div class="choices"></div>
-        <input type="submit" name="toggle1" value="Еще раз" id="toggle1" />
+           </table>
+           <input type="submit" name="toggle1" value="Начать сначала!" id="toggle1" />
+	</div>
     </body>
 </html>
